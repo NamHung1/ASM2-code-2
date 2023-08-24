@@ -4,7 +4,9 @@ var BgameSchema = mongoose.Schema({
     name: String,
     price: Number,
     quantity: Number,
-    image: String
+    image: String,
+    date: Date,
+    color: String
 });
 const BgameModel = mongoose.model('bgame', BgameSchema, 'bgame');
 module.exports = BgameModel;

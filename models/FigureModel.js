@@ -4,7 +4,9 @@ var FigureSchema = mongoose.Schema({
     name: String,
     price: Number,
     quantity: Number,
-    image: String
+    image: String,
+    date: Date,
+    color: String
 });
 const FigureModel = mongoose.model('figure', FigureSchema, 'figure');
 module.exports = FigureModel;
