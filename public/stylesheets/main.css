@@ -1,0 +1,21 @@
+.item_price {
+  padding-left: 5px;
+}
+
+#toy-container {
+  padding-top: 70px;
+}
+
+#box-prod{
+  margin-bottom: 20px;
+  background-color:bisque;
+}
+
+body {
+  background-color: aquamarine !important;
+}
+
+#buton {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,35 @@
+<div class="container mt-4" id="toy-container">
+    <div class="row">
+        {{#each bgames }}
+        <div class="col-md-4" id="box-prod">
+            <div class="border border-2">
+                <div class="slider_container">
+                    <div class=" item">
+                        <div class="image"><img src="{{ image }}" width="412" height="400"></div>
+                        <div class="content">
+                            <div class="info_line d-flex flex-row justify-content-start">
+                                <div class="item_category text-muted ">{{ brand }}</div>
+                            </div>
+                            <div class="info_line d-flex flex-row justify-content-between">
+                                <div class="d-block item_name mb-2"><a href="/bgame/bgameDetail/{{_id}}" id="buton">{{ name }}</a></div>
+                                <div class="item_price">${{ price }}</div>
+                            </div>
+                            <div class="available">
+                                <div class="available_line d-flex flex-row justify-content-start">
+                                    <div class="available_title">Available: {{ quantity }}</div>
+                                </div>
+                                <div class="available_bar"><span style="width:17%"></span></div>
+                            </div>
+                            <div class="text-center mt-2 mb-2">
+                                <a class="btn btn-warning" href="/bgame/bgameEdit/{{ _id }}">Edit</a>
+                                <a class="btn btn-danger" href="/bgame/delete/{{ _id }}" 
+                                onclick="return confirm('Are you sure to delete this toy ?');">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
